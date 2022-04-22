@@ -2,12 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="mainscript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock,paper,scissors!</title>
 </head>
-<body>
-    
+<body id="bodyBackground">
+    <h1 class="introText">Oh no! Rohan encountered Ken Oyanagi and his stand Boy II Man. Help him win Rock, Paper, Scissors!</h1>
+    <div class="main">
+        <div class="pSelection">Choose your meme:</div>
+        <div class="buttonContainer">
+            <button id="rockButton"></button>
+            <button id="paperButton"></button>
+            <button id="scissorsButton"></button>
+        </div>
+        <div class="scoreBoard">
+            <img id="boom1" src="./images/e2.gif">
+            <img id="boom2" src="./images/e2.gif">
+            <p id="humanScore">Rohan: 0</p>
+            <p id="aiScore">Ken: 0</p>
+        </div>
+        <p id="decisionText">Peace of Morioh rests upon your shoulders.</p>
+        <p id="finalVerdict">Nothing</p>
+        <div class="resetContainer">
+            <button id="resetButton"></button>
+            <button id="msButton"></button>
+        </div>
+    </div>
+    <audio id="mainSong" autoplay loop>
+        <source src="JoJo's Bizarre Adventure Opening 6 Full Song『CHASE』.mp3" type="audio/mp3"></source>
+      </audio>
+      <audio id="youLost" autoplay>
+        <source src="You_lost.mp3" type="audio/mp3"></source>
+      </audio>
+      <audio id="youWon" autoplay>
+        <source src="You_win.mp3" type="audio/mp3"></source>
+      </audio>
+      <audio id="rSound" autoplay>
+        <source src="Yo Angelo.mp3" type="audio/mp3"></source>
+      </audio>
+      <audio id="pSound" autoplay>
+        <source src="[JJBA DIU] Josuke- NANI!.mp3" type="audio/mp3"></source>
+      </audio>
+      <audio id="sSound" autoplay>
+        <source src="Doppio's Phone - Jojo's Sound Effect.mp3" type="audio/mp3"></source>
+      </audio>
+      <audio id="win" autoplay>
+        <source src="I've won - Kishibe Rohan.mp3" type="audio/mp3"></source>
+      </audio>
+      <audio id="defeat" autoplay>
+        <source src="Boy II Man.mp3" type="audio/mp3"></source>
+      </audio>
+      <audio id="resetSound" autoplay>
+        <source src="ASB Killer Queen- Bites the Dust with Anime Sound Effects.mp3" type="audio/mp3"></source>
+      </audio>
+        <script type="text/javascript" src="mainscript.js"></script>
 </body>
 </html>

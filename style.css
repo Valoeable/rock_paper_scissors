@@ -1,0 +1,148 @@
+
+body{
+    font-family: 'Seymour One', sans-serif;
+}
+
+#bodyBackground{
+    background-image: url("./images/Background.png");
+    background-size: 2000px 1000px;
+}
+
+.introText{
+    color: rgb(245, 125, 235);
+    text-shadow: -1px -1px 3px rgb(255, 255, 255), 1px -1px 3px rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+}
+
+.main{
+    margin-top: 150px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rockButton{
+    padding: 90px 90px;
+    border: 0;
+    background-image: url("./images/Angelorock.JPG.webp");
+    background-size: 200px 200px;
+    margin: 40px;
+    border: 10px ridge rgb(245, 125, 235);
+    filter:drop-shadow(0px 0px 40px rgb(245, 125, 235));
+    cursor:pointer;
+}
+
+#paperButton{
+    padding: 90px;
+    border: 0;
+    background-image: url("./images/Paper.jpg");
+    background-size: 200px;
+    margin: 40px;
+    border: 10px ridge rgb(245, 125, 235);
+    filter:drop-shadow(0px 0px 40px rgb(245, 125, 235));
+    cursor:pointer;
+}
+
+#scissorsButton{
+    padding: 90px 110px;
+    border: 0;
+    background-image: url("./images/Doppio_scissors.jpg");
+    background-size: 240px;
+    margin: 40px;
+    border: 10px ridge rgb(245, 125, 235);
+    filter:drop-shadow(0px 0px 40px rgb(245, 125, 235));
+    cursor:pointer;
+}
+
+.pSelection{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(245, 125, 235);
+    text-shadow: -1px -1px 3px rgb(255, 255, 255), 1px -1px 3px rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+.scoreBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#boom1,
+#boom2{
+    visibility: hidden;
+    position: absolute;
+    padding-bottom: 180px;
+}
+
+#boom1{
+    padding-right: 200px;
+}
+
+#boom2{
+    padding-left: 200px;
+}
+
+#humanScore,
+#aiScore{
+    font-size: 20px;
+}
+
+#humanScore{
+    color:rgb(255, 252, 74);
+    text-shadow: -1px -1px 3px rgb(0, 0, 0), 1px -1px 3px rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
+#aiScore{
+    color:rgb(255, 53, 53);
+    text-shadow: -1px -1px 3px rgb(0, 0, 0), 1px -1px 3px rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
+#decisionText{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(245, 125, 235);
+    text-shadow: -1px -1px 3px rgb(255, 255, 255), 1px -1px 3px rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+#finalVerdict{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(245, 125, 235);
+    text-shadow: -1px -1px 3px rgb(255, 255, 255), 1px -1px 3px rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+.resetContainer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 530px;
+}
+
+#resetButton{
+    visibility: hidden;
+    padding: 100px 180px;
+    background-size: 360px;
+    border: 10px ridge rgb(245, 125, 235);
+    filter:drop-shadow(0px 0px 40px rgb(245, 125, 235));
+    margin: 10px;
+    background-image: url("./images/reset.gif");
+    cursor:pointer;
+}
+
+#msButton{
+    background-image: url("./images/songOn.png");
+    background-color: transparent;
+    padding: 100px;
+    margin-bottom: 40px;
+    background-size: 200px;
+    border: none;
+    cursor:pointer;
+}
+
+#finalVerdict{
+    visibility: hidden;
+}
